@@ -42,11 +42,15 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
         }
     }
     compileOptions {
+    }
+
+    lintOptions {
+        abortOnError false
     }
 }
 
